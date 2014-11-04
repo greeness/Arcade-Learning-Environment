@@ -26,7 +26,8 @@ On mac, follow below to get it started:
           ... 
 ```
 * copy a sample ROM file to our $Arcade-Learning-Environment/ROMS
-  `cp  ~/Downloads/Roms/HARMONY\ CART\ ROMS/ROMS\ SORTED\ BY\ ALBHABET/A-G/Alien.bin ./roms/alien.bin`
+  `cp  ~/Downloads/Roms/HARMONY\ CART\ ROMS/ROMS\ SORTED\ BY\ ALBHABET/A-G/Alien.bin ./roms/alien.bin`. Note the target rom file name is [hard coded](http://www.reddit.com/r/MachineLearning/comments/2h49jc/roms_for_deepmind_atari_paper/). 
+* Find other supported games and the corresponding rom names [here](http://yavar.naddaf.name/ale/list_of_current_games.html).
 * Run ALE: 
 ```
 ./ale -player_agent random_agent ./roms/alien.bin
@@ -47,6 +48,9 @@ Game will be controlled by an internal agent.
 Episode 1 ended, score: 70
 Episode 2 ended, score: 100
 Episode 3 ended, score: 110
-Episode 4 ended, score: 90```
-
+Episode 4 ended, score: 90
+```
+* To display the game screen, install libsdl: `brew install sdl sdl_gfx sdl_image` 
+* Set USE_SDL=1 in the ALE makefile. See the last page of ALE manual] for details.
+* Re-build `make clean; make`
   
