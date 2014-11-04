@@ -54,3 +54,5 @@ Episode 4 ended, score: 90
 * Set USE_SDL=1 in the ALE makefile. See the last page of ALE manual] for details.
 * Re-build `make clean; make`
 * `./ale -player_agent random_agent -display_screen true roms/alien.bin` to run with screen on.
+![](http://oi58.tinypic.com/5c0soz.jpg)
+
